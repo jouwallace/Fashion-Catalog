@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+header {
+  /*border: solid red;*/
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #162028;
+}
+header figure {
+  /*border: solid green;*/
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+}
+header ul {
+  /*border: solid black;*/
+  width: 30vw;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+header a {
+  text-decoration: none;
+  color: #425564;
+}
+header li:hover {
+  transform: scale(1.2);
+}
+main {
+  width: 100%;
+}
+.modeloLoiraBackground {
+  /*border: solid purple;*/
+  height: 76vh;
+  background-image: url("./img/topo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.newFashionIsEverything {
+  /*border: solid black;*/
+  text-align: center;
+  height: 58vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.newFashionIsEverything h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.newFashionIsEverything p {
+  font-size: 15px;
+  font-weight: 400;
+  width: 70%;
+  color: gray;
+}
+/*créditos totais à: zara.com. As imagens são de totalis pertencimento deles */
+.creditos {
+  /*border: solid black;*/
+  display: flex;
+  justify-content: flex-start;
+}
+.creditosDasImgs {
+  /*border: solid #162028;*/
+  width: 95%;
+  height: 4vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: goldenrod;
+  font-size: 12px;
+}
+.nomeModelo {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+.descricaoModelo {
+  color: gray;
+  font-weight: 400;
+}
+/*responsável pelas medidas dos modelos*/
+.caracteristicaRespostaModelo {
+  font-size: 12px;
+  color: gray;
+  padding-bottom: 5px;
+}
+.modelosMain1 {
+  /*border: solid yellow;*/
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.modelosMain2 {
+  /*border: solid yellow;*/
+  width: 100%;
+  height: 166vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.umaModeloAndando {
+  /*border: solid purple;*/
+  height: 92vh;
+  background-image: url("./img/womanWalks.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.modelosFemininasMain1 {
+  /*border: solid yellow;*/
+  width: 100%;
+  height: 166vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.modelosFemininasMain2 {
+  /*border: solid yellow;*/
+  width: 100%;
+  height: 166vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.sobreJustFashion {
+  height: 76vh;
+  /*border: solid pink;*/
+  background-image: url("./img/bg_detalhe.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sobreJustFashion h2 {
+  font-size: 70px;
+  width: 80vw;
+  color: white;
+}
+.sobreJustFashion p {
+  width: 80vw;
+  color: white;
+}
+section address {
+  width: 100%;
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chamadaParaDesignRoupas {
+  height: 18vh;
+}
+.numeroDeContato {
+  /*border: solid greenyellow;*/
+  height: 6vh;
+}
+.maps {
+  /*border: solid tomato;*/
+  width: 100%;
+  height: 86vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Medidas redes sociais*/
+nav img {
+  height: 50px;
+  width: 50px;
+}
+.redesSociais h3 {
+  font-size: 30px;
+}
+.redesSociais {
+  /*border: solid purple;*/
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.icones {
+  /*border: solid skyblue;*/
+  width: 14vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+a:hover img {
+  transform: scale(1.2);
+}
+footer {
+  /*border: solid seagreen;*/
+  height: 8vh;
+  background-color: #162028;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-size: 20px;
+  color: #425564;
+}
+.modelsMediaQueries {
+  display: none;
+}
+/*medida para smartphone(usando iphone 11 como teste)*/
+@media (max-width: 500px) {
+  header ul {
+    width: 50vw;
+  }
+  header a {
+    /*border: solid black;*/
+    font-size: 12px;
+  }
+  .modeloLoiraBackground {
+    /*border: solid purple;*/
+    height: 50vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .newFashionIsEverything h1 {
+    font-size: 25px;
+  }
+  .newFashionIsEverything p {
+    font-size: 10px;
+  }
+  .creditosDasImgs {
+    font-size: 8px;
+  }
+  .modelosMain1,
+  .modelosMain2,
+  .umaModeloAndando,
+  .modelosFemininasMain1,
+  .modelosFemininasMain2 {
+    display: none;
+  }
+  .modelsMediaQueries {
+    display: block;
+  }
+  .modelsMediaQueries img {
+    width: 150px;
+    height: 180px;
+  }
+  .maleModel01,
+  .maleModel02,
+  .maleModel03 {
+    /*border: solid purple;*/
+    width: 40vw;
+  }
+  .modelosFemininasImg {
+    /*border: solid violet;*/
+  }
+  .modelsMediaQueriesSessao1 {
+    /*border: solid red;*/
+    display: flex;
+    justify-content: space-evenly;
+    height: 90vh;
+  }
+  .nomeModelo {
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+  }
+  .caracteristicaModelo p {
+    font-size: 16px;
+  }
+  .caracteristicaModelo {
+    font-size: 10px;
+  }
+  .caracteristicaRespostaModelo {
+    font-size: 10px;
+  }
+  .descricaoModelo {
+    font-size: 10px;
+  }
+  .modelsMediaQueriesSessao2 {
+    /*border: solid red;*/
+    display: flex;
+    justify-content: space-evenly;
+    height: 90vh;
+  }
+  .modelsMediaQueriesSessao3 {
+    /*border: solid red;*/
+    display: flex;
+    justify-content: space-evenly;
+    height: 90vh;
+  }
+  .sobreJustFashion h2 {
+    font-size: 30px;
+  }
+
+  .sobreJustFashion {
+    font-size: 9px;
+  }
+  .chamadaParaDesignRoupas {
+    font-size: 20px;
+    height: 14vh;
+    display: flex;
+    align-items: flex-end;
+  }
+  .numeroDeContato {
+    /*border: solid greenyellow;*/
+    display: flex;
+    align-items: flex-start;
+    height: 16vh;
+    color: blue;
+  }
+  .maps {
+    display: none;
+  }
+  /*Medidas redes sociais*/
+  nav img {
+    height: 50px;
+    width: 50px;
+  }
+  .redesSociais h3 {
+    font-size: 22px;
+  }
+  .redesSociais {
+    /*border: solid purple;*/
+    height: 30vh;
+  }
+  .icones {
+    width: 50vw;
+  }
+  footer p {
+    font-size: 14px;
+  }
+}
